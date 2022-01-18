@@ -1,0 +1,19 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - name: test
+    server: 1.1.1.1
+    port: 39013
+    type: ssr
+    cipher: chacha20-ietf
+    password: GhQrDS
+    protocol: auth_aes128_sha1
+    obfs: plain
+    protocol-param: 56290:39cbk0gyrsk
+    obfs-param: bilivideo.com
+    udp: true
+ 
